@@ -1,29 +1,4 @@
-/************************************************************
- * Handout: rotate-cube-new.cpp (A Sample Code for Shader-Based OpenGL ---
- for OpenGL version 3.1 and later)
- * Originally from Ed Angel's textbook "Interactive Computer Graphics" 6th Ed
- sample code "example3.cpp" of Chapter 4.
- * Moodified by Yi-Jen Chiang to include the use of a general rotation function
- Rotate(angle, x, y, z), where the vector (x, y, z) can have length != 1.0,
- and also to include the use of the function NormalMatrix(mv) to return the
- normal matrix (mat3) of a given model-view matrix mv (mat4).
- 
- (The functions Rotate() and NormalMatrix() are added to the file "mat-yjc-new.h"
- by Yi-Jen Chiang, where a new and correct transpose function "transpose1()" and
- other related functions such as inverse(m) for the inverse of 3x3 matrix m are
- also added; see the file "mat-yjc-new.h".)
- 
- * Extensively modified by Yi-Jen Chiang for the program structure and user
- interactions. See the function keyboard() for the keyboard actions.
- Also extensively re-structured by Yi-Jen Chiang to create and use the new
- function drawObj() so that it is easier to draw multiple objects. Now a floor
- and a rotating cube are drawn.
- 
- ** Perspective view of a color cube using LookAt() and Perspective()
- 
- ** Colors are assigned to each vertex and then the rasterizer interpolates
- those colors across the triangles.
- **************************************************************/
+
 #include "Angel-yjc.h"
 
 typedef Angel::vec4  color4;
